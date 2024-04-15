@@ -41,3 +41,5 @@ Message Example:
   "body": "<p>Test123</p>"
 }
 ```
+
+![Email Image](./assets/email.png)
