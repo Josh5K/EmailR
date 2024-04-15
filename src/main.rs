@@ -66,7 +66,6 @@ async fn main() -> Result<(), Box<TError>> {
                 let message = json::parse(std::str::from_utf8(&payload).unwrap()).unwrap();
                 println!("[x] Received: Sending email to {:?}", message["to"]);
                 send_email_smtp(message).await;
-                //send_email_smtp(&content.from.as_str().unwrap(), &content.to.as_str().unwrap(), &content.subject.as_str().unwrap(), content.body).await?;
                 println!("[x] Email Sent...");
                 ch.basic_ack(BasicAckArguments::new(msg.deliver.unwrap().delivery_tag(), false)).await.unwrap();
             }
