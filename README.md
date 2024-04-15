@@ -1,5 +1,8 @@
 # EmailR
 
+# Summary
+EmailR is an email service written in Rust
+
 ## Getting Started
 
 1. Check if rust is installed
